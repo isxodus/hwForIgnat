@@ -1,0 +1,62 @@
+:root {
+    --main-bg-color: #6B818C;
+    --msg-bg-color: #08415C
+}
+
+.message {
+    display: grid;
+    grid-template-columns: 70px 400px;
+    grid-template-rows: 1fr;
+    background-color: var(--main-bg-color);
+    padding: 5px;
+    font-family: sans-serif;
+
+}
+
+.avatarArea {
+    background-color: var(--msg-bg-color);
+}
+
+.avatarArea2 {
+    background-color: var(--main-bg-color);
+    border-bottom-right-radius: 10px;
+}
+
+.avatar {
+    width: 60px;
+    border-radius: 50%;
+    align-self: end;
+}
+
+.messageArea {
+    display: grid;
+    grid-template-rows: 10px 1fr;
+    gap: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--msg-bg-color);
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nameOfSender {
+    color: #CC2936;
+    font-weight: bold;
+}
+
+.textData {
+    position: relative;
+}
+
+.textArea {
+    color: #F1BF98
+}
+
+.timeArea {
+    color: #EEE5E9;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
