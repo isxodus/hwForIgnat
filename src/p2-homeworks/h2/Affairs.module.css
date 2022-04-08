@@ -1,3 +1,39 @@
-.someClass {
+:root {
+    --delete-bg-color: #c0392b;
+    --delete-bg-color-darken: #9e2f23;
+    --task-low: #b0dfa3;
+    --task-middle: #72c65b;
+    --task-high: #4ea037;
+}
 
+.affairGrid {
+    display: grid;
+    grid-template-columns: 60px 200px 30px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    color: whitesmoke;
+}
+
+.buttonDiv {
+    padding-left: 10px;
+}
+
+.deleteButton {
+    background-color: var(--delete-bg-color);
+}
+
+.deleteButton:hover {
+    background-color: var(--delete-bg-color-darken)
+}
+
+.highTask {
+    background-color: var(--task-high);
+}
+
+.middleTask {
+    background-color: var(--task-middle);
+}
+
+.lowTask {
+    background-color: var(--task-low);
 }
