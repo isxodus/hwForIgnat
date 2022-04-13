@@ -33,7 +33,6 @@ function Affairs(props: AffairsPropsType) {
 
     return (
         <div>
-
             {mappedAffairs}
             <div className={css.buttonDiv}>
                 <button onClick={setAll}>All</button>
