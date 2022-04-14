@@ -16,11 +16,11 @@ const Greeting: React.FC<GreetingPropsType> = (
     const inputClass = error === 'empty' ? s.error : '' // need to fix with (?:)
 
     return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+        <div className={s.inputContainer}>
+            <input value={name} onChange={setNameCallback} className={s.input + ' ' + inputClass}/>
+            <span className={s.errorMessage}>{error}</span>
+            <button className={s.btn} onClick={addUser}>add</button>
+            <span className={s.info}>Total number of users: {totalUsers}</span>
         </div>
     )
 }
