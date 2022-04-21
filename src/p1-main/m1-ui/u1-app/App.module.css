@@ -1,3 +1,7 @@
 .App {
-
+    display: grid;
+    grid-template-rows: 1fr;
+    /*height: 100vh;*/
+    /*align-self: start;*/
+    background-color: #F7EBEC;
 }
