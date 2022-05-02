@@ -7,8 +7,7 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        // setTimerId
-        //TODO почему в комменте setTimerId? Я как понимаю, надо просто прервать предыдущий таймер?
+        //Я как понимаю, надо просто прервать предыдущий таймер?
         //У нас же нет никаких переключений между id, чтобы можно было в любой момент остановить любой таймер
         clearInterval(timerId)
     }
