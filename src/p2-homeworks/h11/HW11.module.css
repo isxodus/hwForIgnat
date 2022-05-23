@@ -1,0 +1,9 @@
+.range {
+    display: grid;
+    grid-template-columns: 30px 1fr 40px;
+    width: 300px;
+}
+
+.rightAlign {
+    justify-self: right;
+}
